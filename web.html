@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WePLAT 소개</title>
+  <link rel="stylesheet" href="web.css" />
+  <link rel="stylesheet" href="src/font/Pretendard/web/static/pretendard.css" />
+</head>
+<body>
+  <!-- 상단 바 -->
+  <header class="navbar">
+    <div class="navbar-container">
+      <div class="navbar-logo">
+        <img src="src/navbar/WePLAT logo.png" alt="WePLAT 로고" />
+      </div>
+      <nav class="navbar-menu">
+        <ul>
+          <li><a href="#section2">About</a></li>
+          <li><a href="#section3">Courses</a></li>
+          <li><a href="#section5">Contents</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- 섹션 1 -->
+  <section id="section1" class="hero-section">
+    <div class="hero-content">
+      <div class="hero-image">
+        <img src="src/section1_main/profile.png" alt="강사 이미지" />
+      </div>
+      <div class="hero-text">
+        <h1>
+          <span class="pretendard-bold">안녕하세요,<br>강사</span>
+          <span class="pretendard-black">이성미</span>
+          <span class="pretendard-bold">입니다!</span>
+        </h1>
+        <p class="pretendard-regular">
+          ICT 전문 강사, 기업 맞춤형 직무 교육 컨설팅 지원,<br>
+          온라인 교육 콘텐츠 제작 지원,<br>
+          데이터 분석 및 DevOps 전문 강사
+        </p>
+        <button id="moreBtn">More</button>
+      </div>
+    </div>
+  </section>
+
+<!-- Section 2 -->
+<section id="section2" class="about-section">
+  <img src="src/section2_about/About.png" alt="About 이미지" class="about-image" />
+</section>
+
+<!-- Section 3 -->
+<section id="section3" class="course-section">
+  <img src="src/section3_course/course list.png" alt="강의 및 교육 컨설팅" class="course-image" />
+</section>
+
+<!-- Section 4 -->
+<section id="section4" class="msp-section">
+  <div class="msp-content">
+    <img src="src/section4_msp/msp.png" alt="현업 기술 지원(msp)" class="msp-image" />
+
+    <!-- 버튼 추가 -->
+    <a href="mailto:seongmi.lee@weplat.site" class="msp-button">
+      <img src="src/section4_msp/email.png" alt="메일 아이콘" />
+      <span>MSP 지원 문의</span>
+    </a>
+  </div>
+</section>
+
+<!-- Section 5 -->
+<section id="section5">
+  <h2 class="section-title">온라인 콘텐츠</h2>
+
+  <!-- 탭 버튼 -->
+  <div class="tab-buttons">
+    <button id="tab-yt" class="tab-button active">
+      <img src="src/section5_contents/따배 logo.png" alt="따배 로고"> 유튜브 [따배런]
+    </button>
+    <button id="tab-fc" class="tab-button">
+      <img src="src/section5_contents/패캠 logo.png" alt="패스트캠퍼스 로고"> 패스트캠퍼스
+    </button>
+  </div>
+
+  <!-- 유튜브 [따배런] 콘텐츠 -->
+  <div id="content-yt">
+    <div class="contents-grid">
+      <a href="https://youtu.be/6n5obRKsCRQ?si=WUCavZCbKV4H9dRh" target="_blank">
+        <img src="src/section5_contents/따배쿠 썸네일.png" class="thumbnail" alt="따배 쿠버네티스">
+      </a>
+      <a href="https://youtu.be/NLUugLQ8unM?si=hMP8YIXxjhoI0zmW" target="_blank">
+        <img src="src/section5_contents/따배도 썸네일.png" class="thumbnail" alt="따배 도커">
+      </a>
+      <a href="https://youtu.be/KdATmTulf7s?si=0UWE__XbhxqUWeSE" target="_blank">
+        <img src="src/section5_contents/따배씨 썸네일.png" class="thumbnail" alt="따배 CKA">
+      </a>
+      <a href="https://youtu.be/L7Q6vruRiI0?si=cd0hXAUcukIQhBJ5" target="_blank">
+        <img src="src/section5_contents/따배클 썸네일.png" class="thumbnail" alt="따배 클라우드">
+      </a>
+      <a href="https://youtu.be/8FSJat_4ID4?si=Bu3E2gJB-N1O3B1K" target="_blank">
+        <img src="src/section5_contents/따배LFCS 썸네일.png" class="thumbnail" alt="따배 LFCS">
+      </a>
+      <a href="https://youtu.be/mOLEldxTLi8?si=0uOliy8Q5tkZD-15" target="_blank">
+        <img src="src/section5_contents/N만이 썸네일.png" class="thumbnail" alt="N시간 만에 ICT">
+      </a>
+    </div>
+    <div class="view-all">
+      <a href="https://www.youtube.com/@ttabae-learn" target="_blank">강의 전체 보기 →</a>
+    </div>
+  </div>
+
+  <!-- 패스트캠퍼스 콘텐츠 -->
+  <div id="content-fc" class="hidden">
+    <div class="contents-grid">
+      <a href="https://fastcampus.co.kr/dev_online_ttabaelearn" target="_blank">
+        <img src="src/section5_contents/패캠 썸네일 1.png" class="thumbnail" alt="패캠 Kubernetes 마스터">
+      </a>
+      <a href="https://fastcampus.co.kr/dev_online_besignature" target="_blank">
+        <img src="src/section5_contents/패캠 썸네일 2.png" class="thumbnail" alt="패캠 백엔드 초격차">
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- Contact -->
+<section id="contact">
+  <h2 class="contact-title">Contact.</h2>
+  <div class="contact-wrapper">
+    <div class="contact-item" onclick="copyToClipboard('010-8766-1594')">
+      <img src="src/contact/phone.png" alt="Phone Icon" />
+      <p>010-8766-1594</p>
+    </div>
+    <div class="divider"></div>
+    <div class="contact-item" onclick="copyToClipboard('seongmi.lee@weplat.site')">
+      <img src="src/contact/email.png" alt="Email Icon" />
+      <p>seongmi.lee@weplat.site</p>
+    </div>
+  </div>
+</section>
+
+<div class="sidebar-buttons">
+  <img
+    id="btn-up"
+    src="src/sidebar/up.png"
+    alt="맨 위로"
+    class="sidebar-icon"
+  />
+  <img
+    id="btn-contact"
+    src="src/sidebar/contact.png"
+    alt="Contact"
+    class="sidebar-icon"
+  />
+</div>
+
+<script src="web.js"></script>
+</body>
+</html>

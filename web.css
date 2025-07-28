@@ -1,0 +1,429 @@
+@font-face {
+  font-family: 'Charm';
+  src: url('./src/font/Charm/Charm-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* 기본 설정 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Pretendard', sans-serif;
+}
+
+/* 네비게이션 바 */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 10vh; /* ✅ 상단바 높이 줄임 */
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.navbar-container {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-logo {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;  
+  /* ✅ 원하는 위치 조정 */
+  margin-top: 0px;      /* ↑ 위로 이동 */
+  margin-left: -30px;     /* ← 왼쪽으로 이동 */
+  /* 필요 시 transform 또는 padding도 사용 가능 */
+}
+
+.navbar-logo img {
+  height: 100px;
+}
+
+.navbar-menu ul {
+  display: flex;
+  gap: 3rem;
+  list-style: none;
+}
+
+.navbar-menu a {
+  text-decoration: none;
+  color: #000;
+  font-weight: 500;
+  font-size: 1.2rem;
+  transition: color 0.3s;
+}
+
+.navbar-menu a:hover {
+  color: #A25BA0;
+}
+
+/* Section 1 */
+.hero-section {
+  background-color: #FFF6FF;
+  height: 100vh; /* ✅ 화면 전체 높이 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 10vh; /* ✅ 상단바 공간 확보 */
+  box-sizing: border-box;
+}
+
+.hero-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+.hero-image {
+  flex: 1 1 300px;
+  text-align: center;
+}
+
+.hero-image img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 10px;
+}
+
+.hero-text {
+  flex: 1 1 300px;
+  padding: 2rem;
+}
+
+.pretendard-bold {
+  font-family: 'Pretendard', sans-serif;
+  font-weight: 700;
+}
+
+.pretendard-black {
+  font-family: 'Pretendard', sans-serif;
+  font-weight: 900;
+  color: #A25BA0;
+}
+
+.pretendard-regular {
+  font-family: 'Pretendard', sans-serif;
+  font-weight: 400;
+}
+
+.hero-text h1 {
+  font-size: clamp(1.5rem, 4vw, 2.5rem);
+  line-height: 1.5;
+}
+
+.hero-text p {
+  margin-top: 1rem;
+  font-size: clamp(0.8rem, 2.5vw, 1rem);
+  line-height: 1.5;
+}
+
+.hero-text button {
+  margin-top: 1.5rem;
+  padding: 0.6rem 1.2rem;
+  font-size: 1rem;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.hero-text button:hover {
+  background-color: white;
+  color: black;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+/* Section 2: About */
+.about-section {
+  height: 100vh;
+  background-color: #ffffff;
+  padding-top: 10vh;         /* 상단바 공간 확보 */
+  display: flex;
+  justify-content: center;   /* 이미지 수평 중앙 정렬 */
+  align-items: flex-end;     /* 이미지 하단에 맞춤 */
+  overflow: hidden;          /* 혹시 이미지가 넘치면 자르기 */
+}
+
+.about-image {
+  height: 90vh;              /* 상단바 높이를 제외한 정확한 높이 */
+  width: auto;               /* 가로 비율 자동 유지 */
+  object-fit: contain;       /* 가로가 넘칠 경우 이미지 비율 유지 */
+  display: block;
+}
+
+/* Section 3: Course */
+.course-section {
+  height: 100vh;
+  background-color: #fff6ff;
+  padding-top: 10vh;         /* 상단바 공간 확보 */
+  display: flex;
+  justify-content: center;        /* 가로 가운데 정렬 */
+  align-items: center;            /* 세로 가운데 정렬 (10vh 아래 영역 내에서) */
+  box-sizing: border-box;
+}
+
+.course-image {
+  width: 100%;         /* 부모 너비를 기준으로 줄어듦 */
+  max-width: 900px;    /* 최대는 900px까지만 커짐 */
+  height: auto;        /* 세로는 비율에 맞춰 자동 조정 */
+  display: block;
+  object-fit: contain;
+  margin: 0 auto;
+}
+
+/* Section 4: MSP */
+.msp-section {
+  height: 100vh;
+  padding-top: 10vh;              /* 상단바 공간 확보 */
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;        /* 가로 중앙 정렬 */
+  align-items: center;            /* 세로 중앙 정렬 (10vh 아래 기준) */
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.msp-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.msp-image {
+  width: 100%;
+  max-width: 1000px;              /* 원하는 최대 너비 지정 (예: 1000px) */
+  height: auto;                   /* 세로 비율 자동 조절 */
+  display: block;
+  margin: 0 auto;
+}
+
+/* 버튼 스타일 */
+.msp-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: #A25BA0;
+  color: white;
+  padding: 0.6rem 1.2rem;
+  border-radius: 6px;
+  font-family: 'Pretendard';
+  font-weight: 600; /* SemiBold */
+  text-decoration: none;
+  font-size: 0.95rem;
+  transition: background-color 0.2s ease;
+  z-index: 10; /* 🔼 다른 요소보다 위로 */
+  margin-bottom: 40px;
+}
+
+.msp-button:hover {
+  background-color: #8c4b8a;
+}
+
+.msp-button img {
+  width: 20px;
+  height: 20px;
+}
+
+/* Section 5: Contents */
+#section5 {
+  height: 100vh;
+  padding-top: 10vh;
+  background-color: #fff6ff;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.section-title {
+  font-size: 3.5rem;
+  font-weight: 800;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.tab-buttons {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.tab-button {
+  padding: 0.6rem 1.5rem;
+  border-radius: 9999px;
+  font-weight: 600;
+  cursor: pointer;
+  background-color: #fff6ff;
+  border: none;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.tab-button img {
+  height: 1.2rem;
+}
+
+.tab-button.active {
+  background-color: #ffffff;
+  color: black;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.contents-grid {
+  display: grid;
+  gap: 1.5rem;
+  justify-content: center;
+  margin-bottom: 1rem;
+  width: 100%;
+  max-width: 1200px;
+  padding: 0 1rem;
+  box-sizing: border-box;
+}
+
+#content-yt .contents-grid {
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+#content-fc .contents-grid {
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.thumbnail {
+  width: 100%;
+  height: auto;
+  border-radius: 0.75rem;
+  transition: transform 0.3s;
+}
+
+.thumbnail:hover {
+  transform: scale(1.03);
+}
+
+.hidden {
+  display: none;
+}
+
+.view-all {
+  font-weight: 600;
+  text-decoration: underline;
+  cursor: pointer;
+  color: black;
+  margin-top: 2rem;
+  font-size: 0.95rem;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+/* Contact */
+#contact {
+  position: relative;
+  padding: 10vh 2rem;
+  background-color: white;
+  text-align: center;
+}
+
+#contact h2 {
+  font-family: 'Pretendard ExtraBold', sans-serif;
+  font-size: 3.5rem;
+  color: #874286;
+  margin-bottom: 3rem;
+}
+
+.contact-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
+  flex-wrap: wrap;
+  max-width: 800px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.contact-item {
+  flex: 1 1 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem 2rem;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+.contact-item img {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 0.5rem;
+}
+
+.contact-item p {
+  font-family: 'Pretendard', sans-serif;
+  font-size: 1rem;
+  color: black;
+  word-break: break-word;
+  text-align: center;
+}
+
+.divider {
+  width: 1px;
+  height: 80px;
+  background-color: #ccc;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@media (max-width: 600px) {
+  .divider {
+    display: none;
+  }
+
+  .contact-item {
+    flex: 1 1 100%;
+    padding: 1rem 0;
+  }
+}
+
+/* SideBar */
+.sidebar-buttons {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  z-index: 999;
+}
+
+.sidebar-icon {
+  width: 36px;
+  height: 36px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.sidebar-icon:hover {
+  transform: scale(1.1);
+}
