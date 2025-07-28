@@ -5,7 +5,7 @@ AWS S3를 활용하여 [따배]이성미 강사의 강사 소개 페이지 만�
 
 ## 기존 웹페이지
 
-![스크린샷 2025-07-28 오후 1.10.51.png](attachment:43dde112-347a-4044-a7b9-06c74ce4380b:스크린샷_2025-07-28_오후_1.10.51.png)
+<img width="376" height="596" alt="Image" src="https://github.com/user-attachments/assets/099ebef4-1230-48e2-b240-c21ceff58af7" />
 
 🔼 ChatGPT를 활용해 급하게 만들어 사용하던 기존 웹페이지
 
