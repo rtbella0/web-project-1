@@ -5,7 +5,7 @@ AWS S3를 활용하여 [따배]이성미 강사의 강사 소개 페이지 만�
 
 ## 기존 웹페이지
 
-<img width="376" height="596" alt="Image" src="https://github.com/user-attachments/assets/099ebef4-1230-48e2-b240-c21ceff58af7" />
+<img width="200" height="317" alt="Image" src="https://github.com/user-attachments/assets/099ebef4-1230-48e2-b240-c21ceff58af7" />
 
 🔼 ChatGPT를 활용해 급하게 만들어 사용하던 기존 웹페이지
 
@@ -16,12 +16,13 @@ AWS S3를 활용하여 [따배]이성미 강사의 강사 소개 페이지 만�
 
 ## Figma를 활용하여 UI 디자인하기
 
+<img width="300" height="165" alt="Image" src="https://github.com/user-attachments/assets/d22bd911-40bc-43e2-9c58-163762814f2d" />
 
 ### # Color
 
 WePLAT의 로고 색상인 #A25BA0를 기준으로 사용
 
-<img width="1272" height="351" alt="Image" src="https://github.com/user-attachments/assets/5685f2de-cedb-4b14-90b2-5a67f5b0ee0b" />
+<img width="300" height="83" alt="Image" src="https://github.com/user-attachments/assets/5685f2de-cedb-4b14-90b2-5a67f5b0ee0b" />
 
 위 4가지 색상을 위주로 사용하며, 필요시 [ColorSpace](https://mycolor.space/)를 활용하여 색조합 구성
 
