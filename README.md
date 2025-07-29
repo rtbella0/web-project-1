@@ -5,7 +5,7 @@ AWS S3를 활용하여 [따배]이성미 강사의 강사 소개 페이지 만�
 
 ## 기존 웹페이지
 
-<img width="200" height="317" alt="Image" src="https://github.com/user-attachments/assets/099ebef4-1230-48e2-b240-c21ceff58af7" />
+<img width="200" height="317" alt="Image" src="https://github.com/user-attachments/assets/68903fdb-e659-4aed-9927-7fa82f646b20" />
 
 🔼 ChatGPT를 활용해 급하게 만들어 사용하던 기존 웹페이지
 
@@ -16,7 +16,7 @@ AWS S3를 활용하여 [따배]이성미 강사의 강사 소개 페이지 만�
 
 ## Figma를 활용하여 UI 디자인하기
 
-<img width="800" height="440" alt="Image" src="https://github.com/user-attachments/assets/d22bd911-40bc-43e2-9c58-163762814f2d" />
+<img width="800" height="440" alt="Image" src="https://github.com/user-attachments/assets/d867f08d-feeb-4ecf-82d4-e71102d6e149" />
 
 ### # Color
 
