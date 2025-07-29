@@ -66,7 +66,7 @@ WePLAT의 로고 색상인 #A25BA0를 기준으로 사용
     
 6. Contact : **내용 복사**
 
-    <img width="1210" height="428" alt="Image" src="https://github.com/user-attachments/assets/8a93f37f-171c-40ad-bdf7-12bcca359218" />
+    <img width="800" height="283" alt="Image" src="https://github.com/user-attachments/assets/7502fc75-3c50-406b-8377-cdb76536fc36" />
 
     아이콘 클릭 시, 전화번호 또는 이메일 주소 복사
     
